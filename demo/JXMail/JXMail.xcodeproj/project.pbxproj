@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B5B50C19BDAE520060E36E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50B19BDAE520060E36E /* Foundation.framework */; };
+		A1B5B50E19BDAE520060E36E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50D19BDAE520060E36E /* CoreGraphics.framework */; };
+		A1B5B51019BDAE520060E36E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50F19BDAE520060E36E /* UIKit.framework */; };
+		A1B5B51619BDAE520060E36E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B5B51419BDAE520060E36E /* InfoPlist.strings */; };
+		A1B5B51819BDAE520060E36E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B51719BDAE520060E36E /* main.m */; };
+		A1B5B51C19BDAE520060E36E /* JXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B51B19BDAE520060E36E /* JXAppDelegate.m */; };
+		A1B5B51E19BDAE520060E36E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B5B51D19BDAE520060E36E /* Images.xcassets */; };
+		A1B5B52519BDAE520060E36E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B52419BDAE520060E36E /* XCTest.framework */; };
+		A1B5B52619BDAE520060E36E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50B19BDAE520060E36E /* Foundation.framework */; };
+		A1B5B52719BDAE520060E36E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50F19BDAE520060E36E /* UIKit.framework */; };
+		A1B5B52F19BDAE520060E36E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B5B52D19BDAE520060E36E /* InfoPlist.strings */; };
+		A1B5B53119BDAE520060E36E /* JXMailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B53019BDAE520060E36E /* JXMailTests.m */; };
+		A1B5B56019BDB2740060E36E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B55F19BDB2740060E36E /* CFNetwork.framework */; };
+		A1B5B56219BDB2880060E36E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B56119BDB2880060E36E /* Security.framework */; };
+		A1B5B56319BDB2980060E36E /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B55819BDB0E00060E36E /* libMailCore-ios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B5B52819BDAE520060E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B5B50019BDAE520060E36E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B5B50719BDAE520060E36E;
+			remoteInfo = JXMail;
+		};
+		A1B5B55519BDB0E00060E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA537169E772200778456;
+			remoteInfo = "static mailcore2 osx";
+		};
+		A1B5B55719BDB0E00060E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		A1B5B55919BDB0E00060E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA78C169F259200778456;
+			remoteInfo = tests;
+		};
+		A1B5B55B19BDB0E00060E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A81B911706840C00882C15;
+			remoteInfo = "test-ios";
+		};
+		A1B5B55D19BDB0E00060E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
+			remoteInfo = "mailcore osx";
+		};
+		A1B5B56419BDB32D0060E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BA2B091705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1B5B50819BDAE520060E36E /* JXMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B5B50B19BDAE520060E36E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1B5B50D19BDAE520060E36E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1B5B50F19BDAE520060E36E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1B5B51319BDAE520060E36E /* JXMail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JXMail-Info.plist"; sourceTree = "<group>"; };
+		A1B5B51519BDAE520060E36E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1B5B51719BDAE520060E36E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1B5B51919BDAE520060E36E /* JXMail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXMail-Prefix.pch"; sourceTree = "<group>"; };
+		A1B5B51A19BDAE520060E36E /* JXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXAppDelegate.h; sourceTree = "<group>"; };
+		A1B5B51B19BDAE520060E36E /* JXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXAppDelegate.m; sourceTree = "<group>"; };
+		A1B5B51D19BDAE520060E36E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1B5B52319BDAE520060E36E /* JXMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B5B52419BDAE520060E36E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A1B5B52C19BDAE520060E36E /* JXMailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JXMailTests-Info.plist"; sourceTree = "<group>"; };
+		A1B5B52E19BDAE520060E36E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1B5B53019BDAE520060E36E /* JXMailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXMailTests.m; sourceTree = "<group>"; };
+		A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		A1B5B55F19BDB2740060E36E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A1B5B56119BDB2880060E36E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B5B50519BDAE520060E36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B5B56319BDB2980060E36E /* libMailCore-ios.a in Frameworks */,
+				A1B5B56219BDB2880060E36E /* Security.framework in Frameworks */,
+				A1B5B56019BDB2740060E36E /* CFNetwork.framework in Frameworks */,
+				A1B5B50E19BDAE520060E36E /* CoreGraphics.framework in Frameworks */,
+				A1B5B51019BDAE520060E36E /* UIKit.framework in Frameworks */,
+				A1B5B50C19BDAE520060E36E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B5B52019BDAE520060E36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B5B52519BDAE520060E36E /* XCTest.framework in Frameworks */,
+				A1B5B52719BDAE520060E36E /* UIKit.framework in Frameworks */,
+				A1B5B52619BDAE520060E36E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B5B4FF19BDAE520060E36E = {
+			isa = PBXGroup;
+			children = (
+				A1B5B51119BDAE520060E36E /* JXMail */,
+				A1B5B52A19BDAE520060E36E /* JXMailTests */,
+				A1B5B50A19BDAE520060E36E /* Frameworks */,
+				A1B5B50919BDAE520060E36E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B5B50919BDAE520060E36E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B50819BDAE520060E36E /* JXMail.app */,
+				A1B5B52319BDAE520060E36E /* JXMailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B5B50A19BDAE520060E36E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B56119BDB2880060E36E /* Security.framework */,
+				A1B5B55F19BDB2740060E36E /* CFNetwork.framework */,
+				A1B5B50B19BDAE520060E36E /* Foundation.framework */,
+				A1B5B50D19BDAE520060E36E /* CoreGraphics.framework */,
+				A1B5B50F19BDAE520060E36E /* UIKit.framework */,
+				A1B5B52419BDAE520060E36E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B5B51119BDAE520060E36E /* JXMail */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */,
+				A1B5B51A19BDAE520060E36E /* JXAppDelegate.h */,
+				A1B5B51B19BDAE520060E36E /* JXAppDelegate.m */,
+				A1B5B51D19BDAE520060E36E /* Images.xcassets */,
+				A1B5B51219BDAE520060E36E /* Supporting Files */,
+			);
+			path = JXMail;
+			sourceTree = "<group>";
+		};
+		A1B5B51219BDAE520060E36E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B51319BDAE520060E36E /* JXMail-Info.plist */,
+				A1B5B51419BDAE520060E36E /* InfoPlist.strings */,
+				A1B5B51719BDAE520060E36E /* main.m */,
+				A1B5B51919BDAE520060E36E /* JXMail-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1B5B52A19BDAE520060E36E /* JXMailTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B53019BDAE520060E36E /* JXMailTests.m */,
+				A1B5B52B19BDAE520060E36E /* Supporting Files */,
+			);
+			path = JXMailTests;
+			sourceTree = "<group>";
+		};
+		A1B5B52B19BDAE520060E36E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B52C19BDAE520060E36E /* JXMailTests-Info.plist */,
+				A1B5B52D19BDAE520060E36E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1B5B54E19BDB0DF0060E36E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B55619BDB0E00060E36E /* libMailCore.a */,
+				A1B5B55819BDB0E00060E36E /* libMailCore-ios.a */,
+				A1B5B55A19BDB0E00060E36E /* tests */,
+				A1B5B55C19BDB0E00060E36E /* test-ios.app */,
+				A1B5B55E19BDB0E00060E36E /* MailCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B5B50719BDAE520060E36E /* JXMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B5B53419BDAE520060E36E /* Build configuration list for PBXNativeTarget "JXMail" */;
+			buildPhases = (
+				A1B5B50419BDAE520060E36E /* Sources */,
+				A1B5B50519BDAE520060E36E /* Frameworks */,
+				A1B5B50619BDAE520060E36E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B5B56519BDB32D0060E36E /* PBXTargetDependency */,
+			);
+			name = JXMail;
+			productName = JXMail;
+			productReference = A1B5B50819BDAE520060E36E /* JXMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1B5B52219BDAE520060E36E /* JXMailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B5B53719BDAE520060E36E /* Build configuration list for PBXNativeTarget "JXMailTests" */;
+			buildPhases = (
+				A1B5B51F19BDAE520060E36E /* Sources */,
+				A1B5B52019BDAE520060E36E /* Frameworks */,
+				A1B5B52119BDAE520060E36E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B5B52919BDAE520060E36E /* PBXTargetDependency */,
+			);
+			name = JXMailTests;
+			productName = JXMailTests;
+			productReference = A1B5B52319BDAE520060E36E /* JXMailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B5B50019BDAE520060E36E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JX;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "JianXiang Jin";
+				TargetAttributes = {
+					A1B5B52219BDAE520060E36E = {
+						TestTargetID = A1B5B50719BDAE520060E36E;
+					};
+				};
+			};
+			buildConfigurationList = A1B5B50319BDAE520060E36E /* Build configuration list for PBXProject "JXMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1B5B4FF19BDAE520060E36E;
+			productRefGroup = A1B5B50919BDAE520060E36E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A1B5B54E19BDB0DF0060E36E /* Products */;
+					ProjectRef = A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A1B5B50719BDAE520060E36E /* JXMail */,
+				A1B5B52219BDAE520060E36E /* JXMailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A1B5B55619BDB0E00060E36E /* libMailCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCore.a;
+			remoteRef = A1B5B55519BDB0E00060E36E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1B5B55819BDB0E00060E36E /* libMailCore-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMailCore-ios.a";
+			remoteRef = A1B5B55719BDB0E00060E36E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1B5B55A19BDB0E00060E36E /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tests;
+			remoteRef = A1B5B55919BDB0E00060E36E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1B5B55C19BDB0E00060E36E /* test-ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "test-ios.app";
+			remoteRef = A1B5B55B19BDB0E00060E36E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1B5B55E19BDB0E00060E36E /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = A1B5B55D19BDB0E00060E36E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B5B50619BDAE520060E36E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B5B51619BDAE520060E36E /* InfoPlist.strings in Resources */,
+				A1B5B51E19BDAE520060E36E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B5B52119BDAE520060E36E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B5B52F19BDAE520060E36E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B5B50419BDAE520060E36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B5B51C19BDAE520060E36E /* JXAppDelegate.m in Sources */,
+				A1B5B51819BDAE520060E36E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B5B51F19BDAE520060E36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B5B53119BDAE520060E36E /* JXMailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B5B52919BDAE520060E36E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B5B50719BDAE520060E36E /* JXMail */;
+			targetProxy = A1B5B52819BDAE520060E36E /* PBXContainerItemProxy */;
+		};
+		A1B5B56519BDB32D0060E36E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "static mailcore2 ios";
+			targetProxy = A1B5B56419BDB32D0060E36E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1B5B51419BDAE520060E36E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B5B51519BDAE520060E36E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1B5B52D19BDAE520060E36E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B5B52E19BDAE520060E36E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1B5B53219BDAE520060E36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1B5B53319BDAE520060E36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1B5B53519BDAE520060E36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JXMail/JXMail-Prefix.pch";
+				INFOPLIST_FILE = "JXMail/JXMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1B5B53619BDAE520060E36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JXMail/JXMail-Prefix.pch";
+				INFOPLIST_FILE = "JXMail/JXMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A1B5B53819BDAE520060E36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JXMail.app/JXMail";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JXMail/JXMail-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JXMailTests/JXMailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A1B5B53919BDAE520060E36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JXMail.app/JXMail";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JXMail/JXMail-Prefix.pch";
+				INFOPLIST_FILE = "JXMailTests/JXMailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B5B50319BDAE520060E36E /* Build configuration list for PBXProject "JXMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B5B53219BDAE520060E36E /* Debug */,
+				A1B5B53319BDAE520060E36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B5B53419BDAE520060E36E /* Build configuration list for PBXNativeTarget "JXMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B5B53519BDAE520060E36E /* Debug */,
+				A1B5B53619BDAE520060E36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B5B53719BDAE520060E36E /* Build configuration list for PBXNativeTarget "JXMailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B5B53819BDAE520060E36E /* Debug */,
+				A1B5B53919BDAE520060E36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B5B50019BDAE520060E36E /* Project object */;
+}
