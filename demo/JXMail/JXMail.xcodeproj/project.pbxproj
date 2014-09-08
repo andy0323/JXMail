@@ -22,6 +22,13 @@
 		A1B5B56019BDB2740060E36E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B55F19BDB2740060E36E /* CFNetwork.framework */; };
 		A1B5B56219BDB2880060E36E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B56119BDB2880060E36E /* Security.framework */; };
 		A1B5B56319BDB2980060E36E /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B55819BDB0E00060E36E /* libMailCore-ios.a */; };
+		A1B5B57C19BDB8F70060E36E /* JXPOP.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B57B19BDB8F70060E36E /* JXPOP.m */; };
+		A1B5B57F19BDB9080060E36E /* JXSMTP.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B57E19BDB9080060E36E /* JXSMTP.m */; };
+		A1B5B58219BDB9220060E36E /* JXIMAP.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58119BDB9220060E36E /* JXIMAP.m */; };
+		A1B5B58619BDB94F0060E36E /* JXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58519BDB94F0060E36E /* JXHomeViewController.m */; };
+		A1B5B58919BDB9FD0060E36E /* JXBaseMail.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58819BDB9FD0060E36E /* JXBaseMail.m */; };
+		A1B5B58D19BDCE480060E36E /* JXMailConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58C19BDCE480060E36E /* JXMailConfig.m */; };
+		A1B5B59019BDD24D0060E36E /* JXMailPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +103,21 @@
 		A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A1B5B55F19BDB2740060E36E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A1B5B56119BDB2880060E36E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A1B5B57A19BDB8F70060E36E /* JXPOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPOP.h; sourceTree = "<group>"; };
+		A1B5B57B19BDB8F70060E36E /* JXPOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPOP.m; sourceTree = "<group>"; };
+		A1B5B57D19BDB9080060E36E /* JXSMTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXSMTP.h; sourceTree = "<group>"; };
+		A1B5B57E19BDB9080060E36E /* JXSMTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXSMTP.m; sourceTree = "<group>"; };
+		A1B5B58019BDB9220060E36E /* JXIMAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXIMAP.h; sourceTree = "<group>"; };
+		A1B5B58119BDB9220060E36E /* JXIMAP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXIMAP.m; sourceTree = "<group>"; };
+		A1B5B58319BDB93A0060E36E /* JXMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMail.h; sourceTree = "<group>"; };
+		A1B5B58419BDB94F0060E36E /* JXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHomeViewController.h; sourceTree = "<group>"; };
+		A1B5B58519BDB94F0060E36E /* JXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHomeViewController.m; sourceTree = "<group>"; };
+		A1B5B58719BDB9FD0060E36E /* JXBaseMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXBaseMail.h; sourceTree = "<group>"; };
+		A1B5B58819BDB9FD0060E36E /* JXBaseMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXBaseMail.m; sourceTree = "<group>"; };
+		A1B5B58B19BDCE480060E36E /* JXMailConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMailConfig.h; sourceTree = "<group>"; };
+		A1B5B58C19BDCE480060E36E /* JXMailConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMailConfig.m; sourceTree = "<group>"; };
+		A1B5B58E19BDD24D0060E36E /* JXMailPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMailPacket.h; sourceTree = "<group>"; };
+		A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMailPacket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +185,9 @@
 				A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */,
 				A1B5B51A19BDAE520060E36E /* JXAppDelegate.h */,
 				A1B5B51B19BDAE520060E36E /* JXAppDelegate.m */,
+				A1B5B58419BDB94F0060E36E /* JXHomeViewController.h */,
+				A1B5B58519BDB94F0060E36E /* JXHomeViewController.m */,
+				A1B5B57419BDB85D0060E36E /* src */,
 				A1B5B51D19BDAE520060E36E /* Images.xcassets */,
 				A1B5B51219BDAE520060E36E /* Supporting Files */,
 			);
@@ -209,6 +234,26 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		A1B5B57419BDB85D0060E36E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B58319BDB93A0060E36E /* JXMail.h */,
+				A1B5B58719BDB9FD0060E36E /* JXBaseMail.h */,
+				A1B5B58819BDB9FD0060E36E /* JXBaseMail.m */,
+				A1B5B58B19BDCE480060E36E /* JXMailConfig.h */,
+				A1B5B58C19BDCE480060E36E /* JXMailConfig.m */,
+				A1B5B58E19BDD24D0060E36E /* JXMailPacket.h */,
+				A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */,
+				A1B5B58019BDB9220060E36E /* JXIMAP.h */,
+				A1B5B58119BDB9220060E36E /* JXIMAP.m */,
+				A1B5B57A19BDB8F70060E36E /* JXPOP.h */,
+				A1B5B57B19BDB8F70060E36E /* JXPOP.m */,
+				A1B5B57D19BDB9080060E36E /* JXSMTP.h */,
+				A1B5B57E19BDB9080060E36E /* JXSMTP.m */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -351,8 +396,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B5B57F19BDB9080060E36E /* JXSMTP.m in Sources */,
+				A1B5B58219BDB9220060E36E /* JXIMAP.m in Sources */,
+				A1B5B58919BDB9FD0060E36E /* JXBaseMail.m in Sources */,
 				A1B5B51C19BDAE520060E36E /* JXAppDelegate.m in Sources */,
+				A1B5B58D19BDCE480060E36E /* JXMailConfig.m in Sources */,
+				A1B5B59019BDD24D0060E36E /* JXMailPacket.m in Sources */,
 				A1B5B51819BDAE520060E36E /* main.m in Sources */,
+				A1B5B57C19BDB8F70060E36E /* JXPOP.m in Sources */,
+				A1B5B58619BDB94F0060E36E /* JXHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
