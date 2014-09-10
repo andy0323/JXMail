@@ -9,6 +9,7 @@
 #ifndef JXMail_JXMail_h
 #define JXMail_JXMail_h
 
+#import <MailCore/MailCore.h>
 #import "JXIMAP.h"
 #import "JXPOP.h"
 #import "JXSMTP.h"
