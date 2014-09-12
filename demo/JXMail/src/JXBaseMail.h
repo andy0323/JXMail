@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "JXMailConfig.h"
 #import "JXMailPacket.h"
+#import <MailCore/MailCore.h>
+
 /**
  *  尝试登录回调
  */

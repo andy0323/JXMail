@@ -10,4 +10,28 @@
 
 @implementation JXIMAP
 
+/**
+ *  验证用户信息
+ */
+- (void)checkAccount:(JXCheckAccountBlock)checkAccountBlock
+{
+    
+}
+
+/**
+ *  接收邮件
+ */
+- (void)receive:(JXReceiveBlock)receiveBlock
+{
+
+}
+
+/**
+ *  发送邮件
+ */
+- (void)sendMail:(JXMailPacket *)packet compelete:(JXSendBlock)sendBlock
+{
+
+}
+
 @end

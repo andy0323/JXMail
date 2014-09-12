@@ -29,6 +29,7 @@
 		A1B5B58919BDB9FD0060E36E /* JXBaseMail.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58819BDB9FD0060E36E /* JXBaseMail.m */; };
 		A1B5B58D19BDCE480060E36E /* JXMailConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58C19BDCE480060E36E /* JXMailConfig.m */; };
 		A1B5B59019BDD24D0060E36E /* JXMailPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */; };
+		A1F56CE719C1878E004570F1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F56CE619C1878E004570F1 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		A1B5B58C19BDCE480060E36E /* JXMailConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMailConfig.m; sourceTree = "<group>"; };
 		A1B5B58E19BDD24D0060E36E /* JXMailPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMailPacket.h; sourceTree = "<group>"; };
 		A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMailPacket.m; sourceTree = "<group>"; };
+		A1F56CE619C1878E004570F1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F56CE719C1878E004570F1 /* ImageIO.framework in Frameworks */,
 				A1B5B56319BDB2980060E36E /* libMailCore-ios.a in Frameworks */,
 				A1B5B56219BDB2880060E36E /* Security.framework in Frameworks */,
 				A1B5B56019BDB2740060E36E /* CFNetwork.framework in Frameworks */,
@@ -169,6 +172,7 @@
 		A1B5B50A19BDAE520060E36E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1F56CE619C1878E004570F1 /* ImageIO.framework */,
 				A1B5B56119BDB2880060E36E /* Security.framework */,
 				A1B5B55F19BDB2740060E36E /* CFNetwork.framework */,
 				A1B5B50B19BDAE520060E36E /* Foundation.framework */,
@@ -528,6 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shilong sang (9T3353N28G)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JXMail/JXMail-Prefix.pch";
@@ -559,6 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shilong sang (9T3353N28G)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JXMail/JXMail-Prefix.pch";
