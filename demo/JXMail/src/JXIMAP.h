@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "JXBaseMail.h"
 @interface JXIMAP : JXBaseMail
+{
+    MCOIMAPSession *_session;
+}
 
 @end

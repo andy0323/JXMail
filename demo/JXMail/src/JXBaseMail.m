@@ -2,6 +2,18 @@
 
 @implementation JXBaseMail
 
+- (id)initWithConfig:(JXMailConfig *)config
+{
+    if (self = [super init]) {
+        self.config = config;
+    }
+    return self;
+}
++ (id)config:(JXMailConfig *)config
+{
+    return [[self alloc] initWithConfig:config];
+}
+
 /**
  *  检测用户登录是否成功
  */
