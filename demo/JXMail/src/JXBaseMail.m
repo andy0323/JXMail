@@ -1,10 +1,17 @@
 #import "JXBaseMail.h"
 
+
 @implementation JXBaseMail
 
 - (id)initWithConfig:(JXMailConfig *)config
 {
     if (self = [super init]) {
+        
+        if (!config.isComplete) {
+            NSLog(@"请配置所有配置信息");
+            return nil;
+        }
+        
         self.config = config;
     }
     return self;

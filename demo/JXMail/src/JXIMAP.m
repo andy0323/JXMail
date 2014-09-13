@@ -74,7 +74,6 @@
         }
         
         receiveBlock(nil, fetchedMessages);
-        
     }];
 }
 
