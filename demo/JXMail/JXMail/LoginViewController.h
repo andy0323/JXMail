@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class JXMailConfig;
+
 @interface LoginViewController : UIViewController
-{
-    JXMailConfig *_config;
-}
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;

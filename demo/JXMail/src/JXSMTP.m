@@ -10,15 +10,13 @@
 
 @implementation JXSMTP
 
-- (id)initWithConfig:(JXMailConfig *)config
+- (id)initWithHostname:(NSString *)hostname port:(int)port
 {
-    if (self = [super initWithConfig:config]) {
+    if (self = [super initWithHostname:hostname port:port]) {
         
         _session = [[MCOSMTPSession alloc] init];
-        _session.hostname = config.hostname;
-        _session.port = config.port;
-        _session.username = config.username;
-        _session.password = config.password;
+        _session.hostname = hostname;
+        _session.port = port;
         _session.connectionType = MCOConnectionTypeTLS;
     }
     return self;

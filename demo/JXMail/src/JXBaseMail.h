@@ -38,19 +38,22 @@ typedef void (^JXSendBlock)(NSError *error);
 
 }
 /**
- *  邮件配置信息
+ *  服务器域名
  */
-@property (nonatomic, strong) JXMailConfig *config;
+@property (nonatomic, copy) NSString *hostname;
+/**
+ *  服务器端口
+ */
+@property (nonatomic, assign) int port;
 
 /**
  *  构造函数
  */
-- (id)initWithConfig:(JXMailConfig *)config;
+- (id)initWithHostname:(NSString *)hostname port:(int)port;
 /**
  *  构造函数
  */
-+ (id)config:(JXMailConfig *)config;
-
++ (id)mailWithHostname:(NSString *)hostname port:(int)port;
 
 
 /**

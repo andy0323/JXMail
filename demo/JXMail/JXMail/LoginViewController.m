@@ -25,13 +25,11 @@
 
 - (IBAction)login:(id)sender
 {
-    _config = [[JXMailConfig alloc] initWithHostname:@"imap.163.com"
-                                                             port:993
-                                                         username:_usernameTF.text
-                                                         password:_passwordTF.text
-                                                      displayName:@"andyJin"];
+    // 保存用户名. 用户密码
+    [JXMailConfig shareManager].username = self.usernameTF.text;
+    [JXMailConfig shareManager].password = self.passwordTF.text;
     
-    JXIMAP *IMAP = [[JXIMAP alloc] initWithConfig:_config];
+    JXIMAP *IMAP = [[JXIMAP alloc] initWithHostname:@"imap.163.com" port:993];
     [IMAP checkAccount:^(NSError *error) {
         
         if (error) {
@@ -47,7 +45,6 @@
         }
         
         HomeViewController *vc = [[HomeViewController alloc] init];
-        vc.config = _config;
         [self.navigationController pushViewController:vc animated:YES];
         
     }];

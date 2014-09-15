@@ -10,15 +10,17 @@
 
 @implementation JXIMAP
 
-- (id)initWithConfig:(JXMailConfig *)config
+- (id)initWithHostname:(NSString *)hostname port:(int)port
 {
-    if (self = [super initWithConfig:config]) {
+    if (self = [super initWithHostname:hostname port:port]) {
+        
+        JXMailConfig *config = [JXMailConfig shareManager];
         
         _session = [[MCOIMAPSession alloc] init];
-        _session.hostname = config.hostname;
-        _session.port = config.port;
-        _session.username = config.username;
-        _session.password = config.password;
+        _session.hostname = config.serverInfo.hostname;
+        _session.port = config.serverInfo.port;
+        _session.username = config.userInfo.username;
+        _session.password = config.userInfo.password;
         _session.connectionType = MCOConnectionTypeTLS;
     }
     return self;

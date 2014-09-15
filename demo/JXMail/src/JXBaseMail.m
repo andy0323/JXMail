@@ -3,22 +3,17 @@
 
 @implementation JXBaseMail
 
-- (id)initWithConfig:(JXMailConfig *)config
+- (id)initWithHostname:(NSString *)hostname port:(int)port
 {
     if (self = [super init]) {
-        
-        if (!config.isComplete) {
-            NSLog(@"请配置所有配置信息");
-            return nil;
-        }
-        
-        self.config = config;
+        self.hostname = hostname;
+        self.port = port;
     }
     return self;
 }
-+ (id)config:(JXMailConfig *)config
++ (id)mailWithHostname:(NSString *)hostname port:(int)port
 {
-    return [[self alloc] initWithConfig:config];
+    return [[self alloc] initWithHostname:hostname port:port];
 }
 
 /**
