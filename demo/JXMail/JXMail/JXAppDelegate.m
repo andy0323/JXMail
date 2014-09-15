@@ -7,13 +7,16 @@
 //
 
 #import "JXAppDelegate.h"
-#import "JXHomeViewController.h"
+#import "LoginViewController.h"
 @implementation JXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[JXHomeViewController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]];
+    self.window.rootViewController = nav;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

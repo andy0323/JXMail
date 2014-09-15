@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A162D72D19C6E2AC0030C1EE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A162D72B19C6E2AC0030C1EE /* LoginViewController.m */; };
+		A162D72E19C6E2AC0030C1EE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A162D72C19C6E2AC0030C1EE /* LoginViewController.xib */; };
+		A162D73119C6E54B0030C1EE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A162D73019C6E54B0030C1EE /* HomeViewController.m */; };
 		A1B5B50C19BDAE520060E36E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50B19BDAE520060E36E /* Foundation.framework */; };
 		A1B5B50E19BDAE520060E36E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50D19BDAE520060E36E /* CoreGraphics.framework */; };
 		A1B5B51019BDAE520060E36E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5B50F19BDAE520060E36E /* UIKit.framework */; };
@@ -85,6 +88,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A162D72A19C6E2AC0030C1EE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A162D72B19C6E2AC0030C1EE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A162D72C19C6E2AC0030C1EE /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A162D72F19C6E54B0030C1EE /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A162D73019C6E54B0030C1EE /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A1B5B50819BDAE520060E36E /* JXMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5B50B19BDAE520060E36E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1B5B50D19BDAE520060E36E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,6 +197,11 @@
 				A1B5B54D19BDB0DF0060E36E /* mailcore2.xcodeproj */,
 				A1B5B51A19BDAE520060E36E /* JXAppDelegate.h */,
 				A1B5B51B19BDAE520060E36E /* JXAppDelegate.m */,
+				A162D72A19C6E2AC0030C1EE /* LoginViewController.h */,
+				A162D72B19C6E2AC0030C1EE /* LoginViewController.m */,
+				A162D72C19C6E2AC0030C1EE /* LoginViewController.xib */,
+				A162D72F19C6E54B0030C1EE /* HomeViewController.h */,
+				A162D73019C6E54B0030C1EE /* HomeViewController.m */,
 				A1B5B58419BDB94F0060E36E /* JXHomeViewController.h */,
 				A1B5B58519BDB94F0060E36E /* JXHomeViewController.m */,
 				A1B5B57419BDB85D0060E36E /* src */,
@@ -382,6 +395,7 @@
 			files = (
 				A1B5B51619BDAE520060E36E /* InfoPlist.strings in Resources */,
 				A1B5B51E19BDAE520060E36E /* Images.xcassets in Resources */,
+				A162D72E19C6E2AC0030C1EE /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +418,9 @@
 				A1B5B58219BDB9220060E36E /* JXIMAP.m in Sources */,
 				A1B5B58919BDB9FD0060E36E /* JXBaseMail.m in Sources */,
 				A1B5B51C19BDAE520060E36E /* JXAppDelegate.m in Sources */,
+				A162D72D19C6E2AC0030C1EE /* LoginViewController.m in Sources */,
 				A1B5B58D19BDCE480060E36E /* JXMailConfig.m in Sources */,
+				A162D73119C6E54B0030C1EE /* HomeViewController.m in Sources */,
 				A1B5B59019BDD24D0060E36E /* JXMailPacket.m in Sources */,
 				A1B5B51819BDAE520060E36E /* main.m in Sources */,
 				A1B5B57C19BDB8F70060E36E /* JXPOP.m in Sources */,

@@ -9,12 +9,9 @@
 
 @implementation JXHomeViewController
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     
     JXMailConfig *config = [[JXMailConfig alloc] initWithHostname:@"imap.163.com"
                                                              port:993
