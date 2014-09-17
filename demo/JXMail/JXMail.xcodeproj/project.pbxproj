@@ -33,6 +33,7 @@
 		A1B5B58D19BDCE480060E36E /* JXMailConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58C19BDCE480060E36E /* JXMailConfig.m */; };
 		A1B5B59019BDD24D0060E36E /* JXMailPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */; };
 		A1F56CE719C1878E004570F1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F56CE619C1878E004570F1 /* ImageIO.framework */; };
+		A1FEE50C19C9E206000826CB /* JXAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEE50B19C9E206000826CB /* JXAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,8 @@
 		A1B5B58E19BDD24D0060E36E /* JXMailPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMailPacket.h; sourceTree = "<group>"; };
 		A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMailPacket.m; sourceTree = "<group>"; };
 		A1F56CE619C1878E004570F1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A1FEE50A19C9E206000826CB /* JXAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAccount.h; sourceTree = "<group>"; };
+		A1FEE50B19C9E206000826CB /* JXAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAccount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +271,8 @@
 				A1B5B57B19BDB8F70060E36E /* JXPOP.m */,
 				A1B5B57D19BDB9080060E36E /* JXSMTP.h */,
 				A1B5B57E19BDB9080060E36E /* JXSMTP.m */,
+				A1FEE50A19C9E206000826CB /* JXAccount.h */,
+				A1FEE50B19C9E206000826CB /* JXAccount.m */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -419,6 +424,7 @@
 				A1B5B58919BDB9FD0060E36E /* JXBaseMail.m in Sources */,
 				A1B5B51C19BDAE520060E36E /* JXAppDelegate.m in Sources */,
 				A162D72D19C6E2AC0030C1EE /* LoginViewController.m in Sources */,
+				A1FEE50C19C9E206000826CB /* JXAccount.m in Sources */,
 				A1B5B58D19BDCE480060E36E /* JXMailConfig.m in Sources */,
 				A162D73119C6E54B0030C1EE /* HomeViewController.m in Sources */,
 				A1B5B59019BDD24D0060E36E /* JXMailPacket.m in Sources */,

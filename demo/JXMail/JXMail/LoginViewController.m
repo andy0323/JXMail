@@ -25,10 +25,6 @@
 
 - (IBAction)login:(id)sender
 {
-    // 保存用户名. 用户密码
-    [JXMailConfig shareManager].username = self.usernameTF.text;
-    [JXMailConfig shareManager].password = self.passwordTF.text;
-    
     JXIMAP *IMAP = [[JXIMAP alloc] initWithHostname:@"imap.163.com" port:993];
     [IMAP checkAccount:^(NSError *error) {
         

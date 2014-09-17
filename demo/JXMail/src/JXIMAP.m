@@ -10,17 +10,12 @@
 
 @implementation JXIMAP
 
-- (id)initWithHostname:(NSString *)hostname port:(int)port
+- (id)init
 {
-    if (self = [super initWithHostname:hostname port:port]) {
-        
-        JXMailConfig *config = [JXMailConfig shareManager];
-        
+    if (self = [super init]) {
         _session = [[MCOIMAPSession alloc] init];
-        _session.hostname = config.serverInfo.hostname;
-        _session.port = config.serverInfo.port;
-        _session.username = config.userInfo.username;
-        _session.password = config.userInfo.password;
+        _session.hostname = IMAP_HOSTNAME;
+        _session.port = IMAP_PORT;
         _session.connectionType = MCOConnectionTypeTLS;
     }
     return self;
@@ -29,13 +24,19 @@
 /**
  *  验证用户信息
  */
-- (void)checkAccount:(JXCheckAccountBlock)checkAccountBlock
+- (void)checkAccount:(JXAccount *)account accountBlock:(JXCheckAccountBlock)checkAccountBlock
 {
+    _session.username = account.username;
+    _session.password = account.password;
+    
     // 验证用户基本信息
 	[[_session checkAccountOperation] start:^(NSError *error) {
         
         // 验证成功
 		if (error == nil) {
+            
+            [JXMailConfig shareManager].username = account.username;
+            [JXMailConfig shareManager].password = account.password;
             
             checkAccountBlock(nil);
        

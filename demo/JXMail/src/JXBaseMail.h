@@ -9,7 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "JXMailConfig.h"
 #import "JXMailPacket.h"
+#import "JXAccount.h"
 #import <MailCore/MailCore.h>
+
+// 配置项
+#define IMAP_HOSTNAME @""
+#define IMAP_PORT 400
+
+#define POP_HOSTNAME @""
+#define POP_PORT 400
+
+#define SMTP_HOSTNAME @""
+#define SMTP_PORT 400
 
 
 /** FolderType on IMAP **/
@@ -45,23 +56,18 @@ typedef void (^JXSendBlock)(NSError *error);
  *  服务器端口
  */
 @property (nonatomic, assign) int port;
-
 /**
  *  构造函数
  */
-- (id)initWithHostname:(NSString *)hostname port:(int)port;
-/**
- *  构造函数
- */
-+ (id)mailWithHostname:(NSString *)hostname port:(int)port;
-
++ (id)mail;
 
 /**
  *  检测用户登录是否成功
  *
  *  @param checkAccountBlock 登录结果回调
  */
-- (void)checkAccount:(JXCheckAccountBlock)checkAccountBlock;
+- (void)checkAccount:(JXAccount *)account
+        accountBlock:(JXCheckAccountBlock)checkAccountBlock;
 
 /**
  *  接收邮件信息

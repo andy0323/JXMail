@@ -17,14 +17,6 @@
 #import "JXPOP.h"
 #import "JXSMTP.h"
 
-// 配置项
-#define IMAP_HOSTNAME @""
-#define IMAP_PORT 400
 
-#define POP_HOSTNAME @""
-#define POP_PORT 400
-
-#define SMTP_HOSTNAME @""
-#define SMTP_PORT 400
 
 #endif
