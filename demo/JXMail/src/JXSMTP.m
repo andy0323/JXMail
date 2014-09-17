@@ -10,13 +10,13 @@
 
 @implementation JXSMTP
 
-- (id)initWithHostname:(NSString *)hostname port:(int)port
+- (id)init
 {
-    if (self = [super initWithHostname:hostname port:port]) {
+    if (self = [super init]) {
         
         _session = [[MCOSMTPSession alloc] init];
-        _session.hostname = hostname;
-        _session.port = port;
+        _session.hostname = SMTP_HOSTNAME;
+        _session.port = SMTP_PORT;
         _session.connectionType = MCOConnectionTypeTLS;
     }
     return self;
@@ -43,9 +43,11 @@
  */
 - (void)sendMail:(JXMailPacket *)packet compelete:(JXSendBlock)sendBlock
 {
+    JXAccount *acount = [[JXAccountManager shareManager] currentAccount];
+    
     // 发信人信息
-    MCOAddress *from = [MCOAddress addressWithDisplayName:self.config.displayName
-                                                  mailbox:self.config.username];
+    MCOAddress *from = [MCOAddress addressWithDisplayName:acount.nickname
+                                                  mailbox:acount.username];
     // 收信人信息
     MCOAddress *to = [MCOAddress addressWithDisplayName:packet.displayName
                                                 mailbox:packet.mailBox];

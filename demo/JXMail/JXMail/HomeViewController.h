@@ -11,6 +11,9 @@
 @interface HomeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 {
     NSArray *_arr;
+    
+    UITableView *_tableView;
+    
 }
 @property (nonatomic, strong) JXMailConfig *config;
 

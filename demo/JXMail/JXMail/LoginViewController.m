@@ -25,10 +25,13 @@
 
 - (IBAction)login:(id)sender
 {
-    JXIMAP *IMAP = [[JXIMAP alloc] initWithHostname:@"imap.163.com" port:993];
-    [IMAP checkAccount:^(NSError *error) {
-        
-        if (error) {
+    JXAccount *account = [JXAccount accountWithUsername:_usernameTF.text
+                                               password:_passwordTF.text
+                                               nickname:@"andy_nickname"];
+
+    JXIMAP *IMAP = [JXIMAP mail];
+    [IMAP checkAccount:account accountBlock:^(NSError *error) {
+     if (error) {
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"登陆错误"
                                                             message:nil
@@ -42,9 +45,7 @@
         
         HomeViewController *vc = [[HomeViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-        
     }];
-
 }
 
 

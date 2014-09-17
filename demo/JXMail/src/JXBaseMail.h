@@ -10,14 +10,15 @@
 #import "JXMailConfig.h"
 #import "JXMailPacket.h"
 #import "JXAccount.h"
+#import "JXAccountManager.h"
 #import <MailCore/MailCore.h>
 
 // 配置项
-#define IMAP_HOSTNAME @""
-#define IMAP_PORT 400
+#define IMAP_HOSTNAME @"imap.163.com"
+#define IMAP_PORT 993
 
-#define POP_HOSTNAME @""
-#define POP_PORT 400
+#define POP_HOSTNAME @"smtp.163.com"
+#define POP_PORT 465
 
 #define SMTP_HOSTNAME @""
 #define SMTP_PORT 400

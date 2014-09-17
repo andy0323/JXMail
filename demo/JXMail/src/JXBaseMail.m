@@ -1,6 +1,5 @@
 #import "JXBaseMail.h"
 
-
 @implementation JXBaseMail
 
 + (id)mail

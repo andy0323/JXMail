@@ -34,6 +34,7 @@
 		A1B5B59019BDD24D0060E36E /* JXMailPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B58F19BDD24D0060E36E /* JXMailPacket.m */; };
 		A1F56CE719C1878E004570F1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F56CE619C1878E004570F1 /* ImageIO.framework */; };
 		A1FEE50C19C9E206000826CB /* JXAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEE50B19C9E206000826CB /* JXAccount.m */; };
+		A1FEE51819CA50DF000826CB /* JXAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEE51719CA50DF000826CB /* JXAccountManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		A1F56CE619C1878E004570F1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A1FEE50A19C9E206000826CB /* JXAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAccount.h; sourceTree = "<group>"; };
 		A1FEE50B19C9E206000826CB /* JXAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAccount.m; sourceTree = "<group>"; };
+		A1FEE51619CA50DF000826CB /* JXAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAccountManager.h; sourceTree = "<group>"; };
+		A1FEE51719CA50DF000826CB /* JXAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAccountManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +262,10 @@
 			isa = PBXGroup;
 			children = (
 				A1B5B58319BDB93A0060E36E /* JXMail.h */,
+				A1FEE50A19C9E206000826CB /* JXAccount.h */,
+				A1FEE50B19C9E206000826CB /* JXAccount.m */,
+				A1FEE51619CA50DF000826CB /* JXAccountManager.h */,
+				A1FEE51719CA50DF000826CB /* JXAccountManager.m */,
 				A1B5B58719BDB9FD0060E36E /* JXBaseMail.h */,
 				A1B5B58819BDB9FD0060E36E /* JXBaseMail.m */,
 				A1B5B58B19BDCE480060E36E /* JXMailConfig.h */,
@@ -271,8 +278,6 @@
 				A1B5B57B19BDB8F70060E36E /* JXPOP.m */,
 				A1B5B57D19BDB9080060E36E /* JXSMTP.h */,
 				A1B5B57E19BDB9080060E36E /* JXSMTP.m */,
-				A1FEE50A19C9E206000826CB /* JXAccount.h */,
-				A1FEE50B19C9E206000826CB /* JXAccount.m */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -431,6 +436,7 @@
 				A1B5B51819BDAE520060E36E /* main.m in Sources */,
 				A1B5B57C19BDB8F70060E36E /* JXPOP.m in Sources */,
 				A1B5B58619BDB94F0060E36E /* JXHomeViewController.m in Sources */,
+				A1FEE51819CA50DF000826CB /* JXAccountManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

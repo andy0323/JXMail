@@ -15,19 +15,19 @@
 
 @implementation HomeViewController
 
-- (void)viewDidLoad
+- (void)createTableView
 {
-    [super viewDidLoad];
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds
+                                              style:UITableViewStyleGrouped];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
+}
 
-    self.title = @"收件箱";
+- (void)receiveMail
+{
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds
-                                                          style:UITableViewStyleGrouped];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    [self.view addSubview:tableView];
-    
-    JXIMAP *IMAP = [[JXIMAP alloc] initWithConfig:self.config];
+    JXIMAP *IMAP = [JXIMAP mail];
     [IMAP receive:^(NSError *error, NSArray *packets) {
         
         if (error) {
@@ -35,8 +35,19 @@
             return ;
         }
         _arr = packets;
-        [tableView reloadData];
+        [_tableView reloadData];
     }];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    self.title = @"收件箱";
+    
+    [self createTableView];
+    [self receiveMail];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

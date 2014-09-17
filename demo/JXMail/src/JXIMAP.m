@@ -17,6 +17,12 @@
         _session.hostname = IMAP_HOSTNAME;
         _session.port = IMAP_PORT;
         _session.connectionType = MCOConnectionTypeTLS;
+        
+        if ([JXAccountManager shareManager].currentAccount) {
+            JXAccount *account = [JXAccountManager shareManager].currentAccount;
+            _session.username = account.username;
+            _session.password = account.password;
+        }
     }
     return self;
 }
@@ -35,8 +41,8 @@
         // 验证成功
 		if (error == nil) {
             
-            [JXMailConfig shareManager].username = account.username;
-            [JXMailConfig shareManager].password = account.password;
+            [JXAccountManager shareManager].currentAccount = account;
+            [[JXAccountManager shareManager] addAccount:account];
             
             checkAccountBlock(nil);
        

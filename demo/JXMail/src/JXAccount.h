@@ -17,10 +17,21 @@
  *  用户密码
  */
 @property (nonatomic, copy) NSString *password;
+/**
+ *  用户昵称
+ */
+@property (nonatomic, copy) NSString *nickname;
 
+/**
+ *  构造方法
+ */
 - (id)initWithUsername:(NSString *)username
-              password:(NSString *)password;
+              password:(NSString *)password
+              nickname:(NSString *)nickname;
+/**
+ *  构造方法
+ */
 + (id)accountWithUsername:(NSString *)username
-                 password:(NSString *)password;
-
+                 password:(NSString *)password
+                 nickname:(NSString *)nickname;
 @end
