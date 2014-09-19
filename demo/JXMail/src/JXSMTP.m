@@ -18,6 +18,10 @@
         _session.hostname = SMTP_HOSTNAME;
         _session.port = SMTP_PORT;
         _session.connectionType = MCOConnectionTypeTLS;
+        
+        JXAccount *account = [JXAccountManager shareManager].currentAccount;
+        _session.username = account.username;
+        _session.password = account.password;
     }
     return self;
 }

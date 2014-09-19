@@ -8,7 +8,7 @@
 
 #import "HomeViewController.h"
 #import "JXMail.h"
-
+#import "JXSendViewController.h"
 @interface HomeViewController ()
 
 @end
@@ -22,6 +22,20 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
+}
+
+- (void)createNavBarItems
+{
+    UIBarButtonItem *writeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(sendMail)];
+    self.navigationItem.rightBarButtonItem = writeBtn;
+    
+    UIBarButtonItem *refreshBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(receiveMail)];
+    self.navigationItem.leftBarButtonItem = refreshBtn;
+}
+
+- (void)sendMail
+{
+    [self.navigationController pushViewController:[[JXSendViewController alloc] init] animated:YES];
 }
 
 - (void)receiveMail
@@ -46,7 +60,10 @@
     self.title = @"收件箱";
     
     [self createTableView];
+    [self createNavBarItems];
     [self receiveMail];
+    
+    
     
 }
 
