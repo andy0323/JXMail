@@ -2,10 +2,15 @@
 
 @implementation JXBaseMail
 
++ (id)mail
+{
+    return [[self alloc] init];
+}
+
 /**
  *  检测用户登录是否成功
  */
-- (void)checkAccount:(JXCheckAccountBlock)checkAccountBlock
+- (void)checkAccount:(JXAccount *)account accountBlock:(JXCheckAccountBlock)checkAccountBlock
 {
 
 }

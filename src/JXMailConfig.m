@@ -2,26 +2,57 @@
 
 @implementation JXMailConfig
 
-/**
- *  初始化一个邮件配置对象
- */
-- (JXMailConfig *)initWithHostname:(NSString *)hostname port:(int)port username:(NSString *)username password:(NSString *)password displayName:(NSString *)displayName
++ (instancetype)shareManager
+{
+    static JXMailConfig *single;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!single) {
+            single = [[self alloc] init];
+        }
+    });
+    return single;
+}
+@end
+
+
+
+#pragma mark -
+#pragma mark -  服务设置
+
+@implementation JXServerInfo
+
+- (id)initWithHostname:(NSString *)hostname port:(int)port
 {
     if (self = [super init]) {
         self.hostname = hostname;
         self.port = port;
-        self.username = username;
-        self.password = password;
-        self.displayName = displayName;
     }
     return self;
 }
-
-/**
- *  用户信息是否录入完整
- */
-- (BOOL)isComplete
++ (id)infoWithHostname:(NSString *)hostname port:(int)port
 {
-    return (self.hostname && self.port && self.username && self.password && self.displayName);
+    return [self infoWithHostname:hostname port:port];
+}
+@end
+
+
+
+#pragma mark -
+#pragma mark -  用户信息
+
+@implementation JXUserInfo
+
+- (id)initWithUsername:(NSString *)username password:(NSString *)password
+{
+    if (self = [super init]) {
+        self.username = username;
+        self.password = password;
+    }
+    return self;
+}
++ (id)infoWithUsername:(NSString *)username password:(NSString *)password
+{
+    return [self infoWithUsername:username password:password];
 }
 @end

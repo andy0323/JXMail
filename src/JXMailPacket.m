@@ -10,4 +10,19 @@
 
 @implementation JXMailPacket
 
+/**
+ *  初始化发出邮件
+ */
+- (id)initWithDisplayName:(NSString *)displayName mailBox:(NSString *)mailBox subject:(NSString *)subject body:(NSString *)body
+{
+    if (self = [super init]) {
+        _displayName = displayName;
+        _mailBox = mailBox;
+        _subject = subject;
+        _body = body;
+    }
+    
+    return self;
+}
+
 @end

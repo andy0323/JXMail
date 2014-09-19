@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "JXBaseMail.h"
 @interface JXSMTP : JXBaseMail
-
+{
+    MCOSMTPSession *_session;
+}
 @end
